@@ -10,8 +10,8 @@
 		3F75508A214BACFF00294BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F755089214BACFF00294BA8 /* AppDelegate.swift */; };
 		3F75508C214BACFF00294BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F75508B214BACFF00294BA8 /* ViewController.swift */; };
 		3F75508F214BACFF00294BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F75508D214BACFF00294BA8 /* Main.storyboard */; };
-		3F755091214BAD0100294BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F755090214BAD0100294BA8 /* Assets.xcassets */; };
 		3F755094214BAD0100294BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F755092214BAD0100294BA8 /* LaunchScreen.storyboard */; };
+		3F75509C214BB9E000294BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F75509B214BB9E000294BA8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +19,9 @@
 		3F755089214BACFF00294BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F75508B214BACFF00294BA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F75508E214BACFF00294BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3F755090214BAD0100294BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F755093214BAD0100294BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F755095214BAD0100294BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F75509B214BB9E000294BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 				3F755089214BACFF00294BA8 /* AppDelegate.swift */,
 				3F75508B214BACFF00294BA8 /* ViewController.swift */,
 				3F75508D214BACFF00294BA8 /* Main.storyboard */,
-				3F755090214BAD0100294BA8 /* Assets.xcassets */,
 				3F755092214BAD0100294BA8 /* LaunchScreen.storyboard */,
+				3F75509B214BB9E000294BA8 /* Assets.xcassets */,
 				3F755095214BAD0100294BA8 /* Info.plist */,
 			);
 			path = "Tab Bar Controller";
@@ -123,7 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F755094214BAD0100294BA8 /* LaunchScreen.storyboard in Resources */,
-				3F755091214BAD0100294BA8 /* Assets.xcassets in Resources */,
+				3F75509C214BB9E000294BA8 /* Assets.xcassets in Resources */,
 				3F75508F214BACFF00294BA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

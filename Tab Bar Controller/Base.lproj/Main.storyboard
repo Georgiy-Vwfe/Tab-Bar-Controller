@@ -1,24 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ynZ-b6-rNS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Слушай-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tab_Bar_Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Слушай" image="headphones" id="Hf1-hg-bpS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="513" y="360"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vBn-p9-6IZ">
+            <objects>
+                <viewController id="iF3-xc-ug5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gzv-9l-sdi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищите книги, фильмы и музыку" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cFk-xQ-u89">
+                                <rect key="frame" x="16" y="36" width="343" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="iBo-tw-u7R">
+                                <rect key="frame" x="78.5" y="168" width="218" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" text="Введите свой запрос" borderStyle="roundedRect" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="f8G-dZ-Ihq">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dga-Dd-iiv">
+                                        <rect key="frame" x="167" y="0.0" width="51" height="30"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Искать"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cFk-xQ-u89" firstAttribute="leading" secondItem="xEj-wV-fWq" secondAttribute="leading" constant="16" id="5Ev-ts-IYH"/>
+                            <constraint firstItem="iBo-tw-u7R" firstAttribute="top" secondItem="cFk-xQ-u89" secondAttribute="bottom" constant="12" id="Ewe-hT-ipk"/>
+                            <constraint firstItem="iBo-tw-u7R" firstAttribute="centerX" secondItem="gzv-9l-sdi" secondAttribute="centerX" id="Vu5-px-3Be"/>
+                            <constraint firstItem="xEj-wV-fWq" firstAttribute="trailing" secondItem="cFk-xQ-u89" secondAttribute="trailing" constant="16" id="lhV-At-xvD"/>
+                            <constraint firstItem="cFk-xQ-u89" firstAttribute="top" secondItem="xEj-wV-fWq" secondAttribute="top" constant="16" id="wIN-Fb-F0X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xEj-wV-fWq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="LIg-Lx-Mts"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGa-mQ-7t0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304.8" y="358.4707646176912"/>
+        </scene>
+        <!--Смотри-->
+        <scene sceneID="jUG-DT-oP4">
+            <objects>
+                <viewController id="8nr-2R-t91" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N4R-LE-6Hk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="0.58553617294520544" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="AH1-mt-OE2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Смотри" image="clapperboard" id="pyr-Uh-98v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wgi-dF-dfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305" y="-350"/>
+        </scene>
+        <!--Читай-->
+        <scene sceneID="h3H-uj-Drg">
+            <objects>
+                <viewController id="Q1U-W6-jhX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mjk-xB-amv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажми, для открытия случайного текста" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="GR3-Tv-0d1">
+                                <rect key="frame" x="16" y="36" width="343" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GR3-Tv-0d1" firstAttribute="top" secondItem="Yo3-MU-vuW" secondAttribute="top" constant="16" id="hW6-Nj-C5S"/>
+                            <constraint firstItem="GR3-Tv-0d1" firstAttribute="leading" secondItem="Yo3-MU-vuW" secondAttribute="leading" constant="16" id="kRj-I6-6CV"/>
+                            <constraint firstItem="Yo3-MU-vuW" firstAttribute="trailing" secondItem="GR3-Tv-0d1" secondAttribute="trailing" constant="16" id="nLL-G6-hCY"/>
+                            <constraint firstItem="GR3-Tv-0d1" firstAttribute="leading" secondItem="Yo3-MU-vuW" secondAttribute="leading" constant="16" id="wsc-62-uIH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yo3-MU-vuW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Читай" image="books" id="M9x-NZ-57g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YsJ-a6-IDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511.19999999999999" y="-351.27436281859076"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tjP-fN-2BS">
+            <objects>
+                <tabBarController id="ynZ-b6-rNS" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tlF-fw-Xii">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Q1U-W6-jhX" kind="relationship" relationship="viewControllers" id="2ch-3d-dnc"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="WlX-Of-Vs4"/>
+                        <segue destination="8nr-2R-t91" kind="relationship" relationship="viewControllers" id="XJl-kP-ALd"/>
+                        <segue destination="iF3-xc-ug5" kind="relationship" relationship="viewControllers" id="idQ-Ly-GtY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7y-l5-NHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="-18"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="books" width="32" height="32"/>
+        <image name="clapperboard" width="32" height="32"/>
+        <image name="headphones" width="32" height="32"/>
+    </resources>
 </document>
