@@ -13,7 +13,7 @@
         <!--Слушай-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tab_Bar_Controller" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ListenViewController" customModule="Tab_Bar_Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="513" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--Find View Controller-->
         <scene sceneID="vBn-p9-6IZ">
             <objects>
-                <viewController id="iF3-xc-ug5" sceneMemberID="viewController">
+                <viewController id="iF3-xc-ug5" customClass="FindViewController" customModule="Tab_Bar_Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gzv-9l-sdi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,14 +76,32 @@
         <!--Смотри-->
         <scene sceneID="jUG-DT-oP4">
             <objects>
-                <viewController id="8nr-2R-t91" sceneMemberID="viewController">
+                <viewController id="8nr-2R-t91" customClass="WatchViewController" customModule="Tab_Bar_Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N4R-LE-6Hk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4WS-e7-Pt4">
+                                <rect key="frame" x="8" y="28" width="359" height="582"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="0.58553617294520544" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4WS-e7-Pt4" firstAttribute="leading" secondItem="AH1-mt-OE2" secondAttribute="leading" constant="8" id="2qE-yg-x7e"/>
+                            <constraint firstItem="AH1-mt-OE2" firstAttribute="bottom" secondItem="4WS-e7-Pt4" secondAttribute="bottom" constant="8" id="ECO-o7-cW0"/>
+                            <constraint firstItem="AH1-mt-OE2" firstAttribute="trailing" secondItem="4WS-e7-Pt4" secondAttribute="trailing" constant="8" id="JNM-n0-61U"/>
+                            <constraint firstItem="4WS-e7-Pt4" firstAttribute="top" secondItem="AH1-mt-OE2" secondAttribute="top" constant="8" id="k23-cd-OIi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AH1-mt-OE2"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Смотри" image="clapperboard" id="pyr-Uh-98v"/>
+                    <connections>
+                        <outlet property="textView" destination="4WS-e7-Pt4" id="CpA-p8-Heg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wgi-dF-dfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,7 +110,7 @@
         <!--Читай-->
         <scene sceneID="h3H-uj-Drg">
             <objects>
-                <viewController id="Q1U-W6-jhX" sceneMemberID="viewController">
+                <viewController id="Q1U-W6-jhX" customClass="ReadViewController" customModule="Tab_Bar_Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mjk-xB-amv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
